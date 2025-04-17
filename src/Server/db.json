@@ -1,0 +1,21 @@
+
+{
+    "students": [
+        {
+            "id" : 101,
+            "name" : "Virat Kohli",
+            "course" : "Java",
+            "contact" : 7744556633,
+            "address" : "Karve Nagar, Pune",
+            "email" : "vk@gmail.com"
+        },
+        {
+            "id" : 102,
+            "name" : "Rohit Sharma",
+            "course" : "React",
+            "contact" : 8855663322,
+            "address" : "Karve Nagar, Pune",
+            "email" : "rs@gmail.com"
+        }
+    ]
+}
