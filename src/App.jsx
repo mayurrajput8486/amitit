@@ -9,6 +9,7 @@ import Admin from './components/Pages/Admin.jsx'
 import Student from './components/Pages/Student.jsx'
 import Contact from './components/Pages/Contact.jsx'
 import ErrorPage from './components/Pages/ErrorPage.jsx'
+import Footer from './components/Footer/Footer.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
             <Route path="*" element={<ErrorPage/>}/>
           </Routes>
       </BrowserRouter>
+      <Footer/>
         
     </div>
   )
