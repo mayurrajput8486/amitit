@@ -1,21 +1,32 @@
-
 {
-    "students": [
-        {
-            "id" : 101,
-            "name" : "Virat Kohli",
-            "course" : "Java",
-            "contact" : 7744556633,
-            "address" : "Karve Nagar, Pune",
-            "email" : "vk@gmail.com"
-        },
-        {
-            "id" : 102,
-            "name" : "Rohit Sharma",
-            "course" : "React",
-            "contact" : 8855663322,
-            "address" : "Karve Nagar, Pune",
-            "email" : "rs@gmail.com"
-        }
-    ]
+  "students": [
+    {
+      "id": "0afe",
+      "first_name": "Virat",
+      "last_name": "Kohli",
+      "address": "Karve Nagar, Pune",
+      "gender": "male",
+      "state": "Maharashtra",
+      "city": "Pune",
+      "course": "React",
+      "fees": "15000",
+      "dob": "2025-04-02",
+      "pincode": "411052",
+      "email": "virat@gmail.com"
+    },
+    {
+      "id": "cfb6",
+      "first_name": "Rohit",
+      "last_name": "Sharma",
+      "address": "Warje",
+      "gender": "male",
+      "state": "Delhi",
+      "city": "Delhi",
+      "course": "Java",
+      "fees": "35000",
+      "pincode": "411023",
+      "dob": "2025-04-09",
+      "email": "rohit@gmail.com"
+    }
+  ]
 }
