@@ -1,6 +1,7 @@
 import React from 'react'
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+import "../node_modules/bootstrap-icons/font/bootstrap-icons.css"
 import Navbar from './components/Navbar/Navbar.jsx'
 import Home from './components/Pages/Home.jsx'
 import About from './components/Pages/About.jsx'
@@ -11,6 +12,7 @@ import Contact from './components/Pages/Contact.jsx'
 import ErrorPage from './components/Pages/ErrorPage.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Studentdetails from './components/Pages/Studentdetails.jsx'
 const App = () => {
   return (
     <div>
@@ -24,6 +26,7 @@ const App = () => {
             <Route path="/admin" element={<Admin/>}/>
             <Route path="/student" element={<Student/>}/>
             <Route path="/contact" element={<Contact/>}/>
+            <Route path='/stu_details' element={<Studentdetails/>}></Route>
             <Route path="*" element={<ErrorPage/>}/>
           </Routes>
       </BrowserRouter>

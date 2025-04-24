@@ -2,12 +2,16 @@ import React, { useState } from 'react'
 import './Register.css'
 import { useForm } from 'react-hook-form'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 const Register = () => {
   const {register, handleSubmit, reset, formState : {errors}, setValue} = useForm()
+  const navigate = useNavigate()
+  
   const addStudent = (data) =>{
     axios.post('http://localhost:8080/students',data)
     alert('Data Added !!!')
     reset()
+    navigate('/stu_details')
   }
 
   const [course, setCourse] = useState('')
@@ -140,7 +144,6 @@ const Register = () => {
                               placeholder='Seelct Course for fees'
                               {...register('fees')}
                             />
-
                         </div>
                       </div>
 
@@ -151,8 +154,8 @@ const Register = () => {
                       </div>
 
                       <div data-mdb-input-init className="form-outline mb-4">
-                        <input type="text" id="form3Example90" className="form-control form-control-lg" {...register('pincode')}/>
-                        <label className="form-label" htmlFor="form3Example90">Pincode</label>
+                        <input type="tel" id="form3Example90" className="form-control form-control-lg" {...register('contact')}/>
+                        <label className="form-label" htmlFor="form3Example90">Contact</label>
                       </div>
 
 

@@ -11,7 +11,7 @@
       "course": "React",
       "fees": "15000",
       "dob": "2025-04-02",
-      "pincode": "411052",
+      "contact": "7744110022",
       "email": "virat@gmail.com"
     },
     {
@@ -24,9 +24,37 @@
       "city": "Delhi",
       "course": "Java",
       "fees": "35000",
-      "pincode": "411023",
+      "contact": "7744556633",
       "dob": "2025-04-09",
       "email": "rohit@gmail.com"
+    },
+    {
+      "id": "9c55",
+      "first_name": "Hardik",
+      "last_name": "Pandya",
+      "address": "Karve Nagar, Pune",
+      "gender": "male",
+      "state": "Maharashtra",
+      "city": "Pune",
+      "course": "AWS",
+      "fees": "30000",
+      "dob": "2025-04-13",
+      "contact": "7755663399",
+      "email": "hardik@gmail.com"
+    },
+    {
+      "id": "44ca",
+      "first_name": "MS",
+      "last_name": "Dhoni",
+      "address": "Kothrud",
+      "gender": "male",
+      "state": "Maharashtra",
+      "city": "Pune",
+      "course": "Data Analytics",
+      "fees": "45000",
+      "dob": "2025-04-17",
+      "contact": "8855220022",
+      "email": "msd@gmail.com"
     }
   ]
 }
