@@ -55,6 +55,48 @@
       "dob": "2025-04-17",
       "contact": "8855220022",
       "email": "msd@gmail.com"
+    },
+    {
+      "id": "ec15",
+      "first_name": "Suraj",
+      "last_name": "",
+      "address": "",
+      "gender": null,
+      "state": "",
+      "city": "",
+      "course": "",
+      "fees": "",
+      "dob": "",
+      "contact": "",
+      "email": ""
+    },
+    {
+      "id": "65f1",
+      "first_name": "Mayur",
+      "last_name": "Rajput",
+      "address": "B-302 Karve Nagar, Pune",
+      "gender": "male",
+      "state": "Maharashtra",
+      "city": "Pune",
+      "course": "React",
+      "fees": "15000",
+      "dob": "2025-04-26",
+      "contact": "7896253656",
+      "email": "batch9@gmail.com"
+    },
+    {
+      "id": "7cb6",
+      "first_name": "Virat",
+      "last_name": "Pandya",
+      "address": "Karve Nagar, Pune",
+      "gender": "male",
+      "state": "Maharashtra",
+      "city": "Pune",
+      "course": "DSA",
+      "fees": "5000",
+      "dob": "2025-04-15",
+      "contact": "7744556633",
+      "email": "parmeshvarkate12@gmail.com"
     }
   ]
 }
