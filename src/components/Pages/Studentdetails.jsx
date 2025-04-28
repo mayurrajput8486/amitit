@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Studentdetails = () => {
 
@@ -65,9 +66,12 @@ const Studentdetails = () => {
                                     <td>{s.contact}</td>
                                     <td>{s.email}</td>
                                     <td>
-                                        <button className='btn btn-warning me-2'>
-                                            <i className="bi bi-pencil-square"></i>
-                                        </button>
+                                        <NavLink to={`/update/${s.id}`}>
+                                            <button className='btn btn-warning me-2'>
+                                                <i className="bi bi-pencil-square"></i>
+                                            </button>
+                                        </NavLink>
+                                        
                                         <button className='btn btn-danger'>
                                             <i className="bi bi-trash"></i>
                                         </button>

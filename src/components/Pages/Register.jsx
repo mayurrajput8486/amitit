@@ -33,8 +33,7 @@ const Register = () => {
     setCourse(selectCourse)
     const selectFees = courseFees[selectCourse]
     setValue("fees",selectFees)
-    
-
+    setValue('course',selectCourse, {shouldValidate : true})   
   }
 
   return (

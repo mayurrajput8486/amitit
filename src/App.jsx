@@ -11,6 +11,7 @@ import Student from './components/Pages/Student.jsx'
 import Contact from './components/Pages/Contact.jsx'
 import ErrorPage from './components/Pages/ErrorPage.jsx'
 import Footer from './components/Footer/Footer.jsx'
+import Update from './components/Pages/Update.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Studentdetails from './components/Pages/Studentdetails.jsx'
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
             <Route path="/student" element={<Student/>}/>
             <Route path="/contact" element={<Contact/>}/>
             <Route path='/stu_details' element={<Studentdetails/>}></Route>
+            <Route path='/update/:studentID' element={<Update/>}></Route>
             <Route path="*" element={<ErrorPage/>}/>
           </Routes>
       </BrowserRouter>

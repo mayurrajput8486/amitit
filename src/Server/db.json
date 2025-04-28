@@ -1,18 +1,18 @@
 {
   "students": [
     {
-      "id": "0afe",
       "first_name": "Virat",
       "last_name": "Kohli",
       "address": "Karve Nagar, Pune",
       "gender": "male",
       "state": "Maharashtra",
       "city": "Pune",
-      "course": "React",
-      "fees": "15000",
+      "course": "Data Analytics",
+      "fees": "45000",
       "dob": "2025-04-02",
-      "contact": "7744110022",
-      "email": "virat@gmail.com"
+      "contact": "7744119966",
+      "email": "viratk18@gmail.com",
+      "id": "0afe"
     },
     {
       "id": "cfb6",
@@ -57,18 +57,18 @@
       "email": "msd@gmail.com"
     },
     {
-      "id": "ec15",
       "first_name": "Suraj",
-      "last_name": "",
-      "address": "",
-      "gender": null,
-      "state": "",
-      "city": "",
-      "course": "",
-      "fees": "",
-      "dob": "",
-      "contact": "",
-      "email": ""
+      "last_name": "Chauhan",
+      "address": "Karve Nagar, Pune",
+      "gender": "male",
+      "state": "Maharashtra",
+      "city": "Pune",
+      "course": "DSA",
+      "fees": "5000",
+      "dob": "2025-04-13",
+      "contact": "7755663399",
+      "email": "test11@gmail.com",
+      "id": "ec15"
     },
     {
       "id": "65f1",
