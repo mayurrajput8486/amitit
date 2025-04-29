@@ -72,9 +72,12 @@ const Studentdetails = () => {
                                             </button>
                                         </NavLink>
                                         
-                                        <button className='btn btn-danger'>
-                                            <i className="bi bi-trash"></i>
-                                        </button>
+                                        <NavLink to={`/delete/${s.id}`}>
+                                            <button className='btn btn-danger'>
+                                                <i className="bi bi-trash"></i>
+                                            </button>
+                                        </NavLink>
+                                       
                                     </td>
                                 </tr>
                             )
