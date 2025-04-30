@@ -6,6 +6,8 @@ const Studentdetails = () => {
 
     //update the records of students 
     const [stu, setStu] = useState([])
+    //TO SEARCH THE COURSE USE STATE HOOK
+    const [searchcourse,setCourse] = useState('')
 
     //fetch data using axios.get
     const getData = async() =>{
@@ -26,9 +28,23 @@ const Studentdetails = () => {
         getData()
     } , [])
 
+    //Logic for filtering then data
+    const searchCourse = stu.filter((st)=>{
+        return st.course.toLowerCase().includes(searchcourse.toLowerCase())
+    })
+
   return (
     <div style={{height : '650px'}}>
         <h2 className='mt-3 text-center'>Students Details</h2>
+        <div className='w-50 mx-auto mt-4 mb-4'>
+            <input 
+                type='text'
+                className='form-control w-100'
+                placeholder='Enter Course Name'
+                value={searchcourse}
+                onChange={(e)=>setCourse(e.target.value)}
+            />
+        </div>
         <div className='mt-3'>
             <table className='table table-dark'>
                 <thead>
@@ -50,7 +66,7 @@ const Studentdetails = () => {
                 </thead>
                 <tbody>
                     {
-                        stu.map((s,index)=>{
+                        searchCourse.map((s,index)=>{
                             return(
                                 <tr key={index}>
                                     <td>{index + 1}</td>
@@ -85,6 +101,11 @@ const Studentdetails = () => {
                     }
                 </tbody>
             </table>
+            <div className='text-center'>
+                <NavLink to='/admin'>
+                    <button className='btn btn-warning w-50'>LOGOUT</button>
+                </NavLink>
+            </div>
         </div>
     </div>
   )
