@@ -231,6 +231,20 @@ const Register = () => {
                         }
                       </div>
 
+                      <div data-mdb-input-init className="form-outline mb-4">
+                        <input type="password" id="form3Example97" className="form-control form-control-lg" {...register('password',{
+                          required : "Password is required",
+                          pattern : {
+                            value : /^(?=.*[A-Z])(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/,
+                            message : "Password at least 8 character long,include one uppercase, one special character and digit"
+                          }
+                        })}/>
+                        <label className="form-label" htmlFor="form3Example97">Password</label>
+                        {
+                          errors.password && <div className='text-danger'>{errors.password.message}</div>
+                        }
+                      </div>
+
                       <div className="d-flex justify-content-end pt-3">
                         <button type="reset" data-mdb-button-init data-mdb-ripple-init className="btn btn-light btn-lg">Reset all</button>
                         <button type="submit" data-mdb-button-init data-mdb-ripple-init className="btn btn-warning btn-lg ms-2">Submit form</button>

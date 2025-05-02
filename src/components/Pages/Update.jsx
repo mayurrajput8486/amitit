@@ -7,28 +7,29 @@ const Update = () => {
     const { register, handleSubmit, reset, formState: { errors }, setValue } = useForm()
     const [course, setCourse] = useState('')
     //to fetch specific students data use hook called useParams()
-    const {studentID} = useParams()
+    const { studentID } = useParams()
     const navigate = useNavigate()
 
     //fetch data 
-    const getData = async () =>{
+    const getData = async () => {
         const result = await axios.get(`http://localhost:8080/students/${studentID}`)
         setValue("first_name", result.data.first_name)
-        setValue("last_name",result.data.last_name)
+        setValue("last_name", result.data.last_name)
         setValue("address", result.data.address)
-        setValue("gender",result.data.gender)
-        setValue("state",result.data.state)
-        setValue("city",result.data.city)
-        setValue("course",result.data.course)
-        setValue("fees",result.data.fees)
-        setValue("dob",result.data.dob)
-        setValue("contact",result.data.contact)
-        setValue("email",result.data.email)
+        setValue("gender", result.data.gender)
+        setValue("state", result.data.state)
+        setValue("city", result.data.city)
+        setValue("course", result.data.course)
+        setValue("fees", result.data.fees)
+        setValue("dob", result.data.dob)
+        setValue("contact", result.data.contact)
+        setValue("email", result.data.email)
+        setValue("password", result.data.password)
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         getData()
-    },[])
+    }, [])
 
     const courseFees = {
         React: '15000',
@@ -51,8 +52,8 @@ const Update = () => {
     }
 
     //create function to update the data - PUT
-    const updateData = (data) =>{
-        axios.put(`http://localhost:8080/students/${studentID}`,data)
+    const updateData = (data) => {
+        axios.put(`http://localhost:8080/students/${studentID}`, data)
         alert("Data Update !!!!")
         navigate('/stu_details')
     }
@@ -249,6 +250,20 @@ const Update = () => {
                                                     <label className="form-label" htmlFor="form3Example97">Email ID</label>
                                                     {
                                                         errors.email && <div className='text-danger'>{errors.email.message}</div>
+                                                    }
+                                                </div>
+
+                                                <div data-mdb-input-init className="form-outline mb-4">
+                                                    <input type="password" id="form3Example97" className="form-control form-control-lg" {...register('password', {
+                                                        required: "Password is required",
+                                                        pattern: {
+                                                            value: /^(?=.*[A-Z])(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/,
+                                                            message: "Password at least 8 character long,include one uppercase, one special character and digit"
+                                                        }
+                                                    })} />
+                                                    <label className="form-label" htmlFor="form3Example97">Password</label>
+                                                    {
+                                                        errors.password && <div className='text-danger'>{errors.password.message}</div>
                                                     }
                                                 </div>
 

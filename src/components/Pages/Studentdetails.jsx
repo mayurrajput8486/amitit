@@ -61,6 +61,7 @@ const Studentdetails = () => {
                         <th>DOB</th>
                         <th>Contact</th>
                         <th>Email</th>
+                        <th>Password</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -81,6 +82,7 @@ const Studentdetails = () => {
                                     <td>{s.dob}</td>
                                     <td>{s.contact}</td>
                                     <td>{s.email}</td>
+                                    <td>{s.password}</td>
                                     <td>
                                         <NavLink to={`/update/${s.id}`}>
                                             <button className='btn btn-warning me-2'>

@@ -15,6 +15,7 @@ import Update from './components/Pages/Update.jsx'
 import Delete from './components/Pages/Delete.jsx'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Studentdetails from './components/Pages/Studentdetails.jsx'
+import Studata from './components/Pages/Studata.jsx'
 const App = () => {
   return (
     <div>
@@ -29,6 +30,7 @@ const App = () => {
             <Route path="/student" element={<Student/>}/>
             <Route path="/contact" element={<Contact/>}/>
             <Route path='/stu_details' element={<Studentdetails/>}></Route>
+            <Route path='/studata' element={<Studata/>}></Route>
             <Route path='/update/:studentID' element={<Update/>}></Route>
             <Route path='/delete/:studentID' element={<Delete/>}></Route>
             <Route path="*" element={<ErrorPage/>}/>

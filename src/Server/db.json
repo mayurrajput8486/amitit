@@ -12,10 +12,10 @@
       "dob": "2025-04-02",
       "contact": "7744119966",
       "email": "viratk18@gmail.com",
+      "password": "Virat@123",
       "id": "0afe"
     },
     {
-      "id": "cfb6",
       "first_name": "Rohit",
       "last_name": "Sharma",
       "address": "Warje",
@@ -24,12 +24,13 @@
       "city": "Delhi",
       "course": "Java",
       "fees": "35000",
-      "contact": "7744556633",
       "dob": "2025-04-09",
-      "email": "rohit@gmail.com"
+      "contact": "7744556633",
+      "email": "rohit@gmail.com",
+      "password": "Rohit@123",
+      "id": "cfb6"
     },
     {
-      "id": "9c55",
       "first_name": "Hardik",
       "last_name": "Pandya",
       "address": "Karve Nagar, Pune",
@@ -40,21 +41,39 @@
       "fees": "30000",
       "dob": "2025-04-13",
       "contact": "7755663399",
-      "email": "hardik@gmail.com"
+      "email": "hardik@gmail.com",
+      "password": "Hardik@123",
+      "id": "9c55"
     },
     {
-      "first_name": "Suraj",
-      "last_name": "Chauhan",
-      "address": "Karve Nagar, Pune",
+      "id": "8e56",
+      "first_name": "Apurva",
+      "last_name": "Rajput",
+      "address": "Karve Nagar",
+      "gender": "female",
+      "state": "Maharashtra",
+      "city": "Pune",
+      "course": "AWS",
+      "fees": "30000",
+      "dob": "2025-05-10",
+      "contact": "8668978556",
+      "email": "ap@gmail.com",
+      "password": "Apurva@123"
+    },
+    {
+      "id": "2b4e",
+      "first_name": "Virat",
+      "last_name": "Kohli",
+      "address": "Karve Nagar",
       "gender": "male",
       "state": "Maharashtra",
       "city": "Pune",
-      "course": "DSA",
-      "fees": "5000",
-      "dob": "2025-04-13",
-      "contact": "7755663399",
-      "email": "test11@gmail.com",
-      "id": "ec15"
+      "course": "Data Analytics",
+      "fees": "45000",
+      "dob": "2025-04-02",
+      "contact": "7744119966",
+      "email": "viratk18@gmail.com",
+      "password": "Virat@123"
     }
   ]
 }
